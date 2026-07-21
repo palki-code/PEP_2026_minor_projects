@@ -1,0 +1,28 @@
+body{
+    background : linear-gradient(120deg, #ca395b 0% , #c10e7c 100%)
+    
+
+}
+div{
+     margin-bottom: 20px;
+
+}
+#tasksTable tbody tr:hover {
+  background-color: #e3f2fd;
+}
+#tasksTable tbody tr:nth-child(odd):hover{
+    background-color: #deb2fcf6;
+
+}
+#tasksTable tbody tr:nth-child(even):hover{
+    background-color: #713b76;
+}
+#tasksTable{
+      flex: 1;
+    padding: 12px 15px;
+    
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    font-size: 1 em;
+    transition: border-color 0.3s ease;
+}
