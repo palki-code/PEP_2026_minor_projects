@@ -1,0 +1,103 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+}
+
+.about-hero {
+  text-align: center;
+  max-width: 700px;
+  margin-top: 40px;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.about-title {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: var(--text-h);
+}
+
+.about-lead {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+/* Guidelines section */
+.guidelines-section {
+  width: 100%;
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.guidelines-section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+  color: var(--text-h);
+}
+
+.guidelines-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.guideline-item {
+  display: flex;
+  gap: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.guideline-num {
+  font-family: var(--mono);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent);
+  opacity: 0.8;
+  line-height: 1.2;
+}
+
+.guideline-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.guideline-content h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-h);
+  margin: 0;
+}
+
+.guideline-content p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+  margin: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

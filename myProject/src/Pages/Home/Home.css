@@ -1,0 +1,143 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+}
+
+/* Hero section */
+.hero-section {
+  text-align: center;
+  max-width: 750px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.hero-tag {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  color: var(--text-h);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.hero-title {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--text-h);
+  margin: 0;
+}
+
+.hero-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  max-width: 580px;
+  margin: 0;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+/* Paths grid section */
+.paths-section {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.paths-section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: left;
+  margin: 0;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+}
+
+.paths-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.path-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: border-color 0.15s ease;
+}
+
+.path-card:hover {
+  border-color: var(--text);
+}
+
+.path-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-h);
+}
+
+.path-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+  margin: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .hero-title {
+    font-size: 32px;
+  }
+  
+  .paths-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+  
+  .hero-ctas .btn {
+    width: 100%;
+  }
+}
